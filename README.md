@@ -8,7 +8,7 @@
 
 ---
 
-<video src="https://nos.netease.com/youdata-netease/public-utilUpload-hJtV4EjNY14TgV3zkHT2fj.mp4" controls width="100%" poster="public/demo-poster.jpg"></video>
+[![演示视频](public/demo-poster.jpg)](https://nos.netease.com/youdata-netease/public-utilUpload-hJtV4EjNY14TgV3zkHT2fj.mp4)
 
 ## 功能特性
 
