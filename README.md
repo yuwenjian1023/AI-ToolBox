@@ -8,9 +8,7 @@
 
 ---
 
-<video src="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo.mp4" controls width="100%" poster="public/demo.mov">
-  您的浏览器不支持视频播放，请下载查看。
-</video>
+<video src="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo.mp4" controls width="100%" poster="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo-poster.jpg"></video>
 
 ## 功能特性
 
