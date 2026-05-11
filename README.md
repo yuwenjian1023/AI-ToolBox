@@ -1,5 +1,7 @@
 # AI Toolbox
 
+[**中文版说明**](README.zh-CN.md)
+
 A web-based toolbox for AI-assisted content processing — audio transcription, knowledge base management, document parsing, and more.
 
 Built with [Next.js](https://nextjs.org) (App Router), React, Tailwind CSS, and TypeScript.
