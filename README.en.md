@@ -53,6 +53,7 @@ Edit `.env.local` with your API keys:
 | `OSS_BUCKET` | Aliyun OSS bucket name |
 | `LLM_PROVIDER` | `dashscope` or `anthropic` |
 | `ANTHROPIC_API_KEY` | Anthropic API key (if using Claude) |
+| `INVITE_CODE` | Login invite code (optional; if not set, 10 random codes are generated on first start and printed to console) |
 
 ### Development
 

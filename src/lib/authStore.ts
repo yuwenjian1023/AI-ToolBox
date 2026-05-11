@@ -58,24 +58,36 @@ class AuthStore {
     const now = new Date().toISOString();
     const insert = db.prepare('INSERT INTO invite_codes (code, label, created_at) VALUES (?, ?, ?)');
     const codes: string[] = [];
-    const tx = db.transaction(() => {
-      for (let i = 0; i < 10; i++) {
-        const code = generateCode();
-        insert.run(code, '', now);
-        codes.push(code);
-      }
-    });
-    tx();
 
-    console.log('\n========== 邀请码列表 ==========');
-    codes.forEach((c, i) => console.log(`  ${i + 1}. ${c}`));
-    console.log('================================\n');
+    const envCode = process.env.INVITE_CODE?.trim();
+    if (envCode) {
+      insert.run(envCode, 'env', now);
+      codes.push(envCode);
+      console.log(`\n========== 邀请码 ==========`);
+      console.log(`  ${envCode}`);
+      console.log('=============================\n');
+    } else {
+      const tx = db.transaction(() => {
+        for (let i = 0; i < 10; i++) {
+          const code = generateCode();
+          insert.run(code, '', now);
+          codes.push(code);
+        }
+      });
+      tx();
+
+      console.log('\n========== 邀请码列表 ==========');
+      codes.forEach((c, i) => console.log(`  ${i + 1}. ${c}`));
+      console.log('================================\n');
+    }
   }
 
   validateCode(code: string): boolean {
     const normalized = code.trim().toUpperCase();
     const row = this.getDb().prepare('SELECT code FROM invite_codes WHERE code = ?').get(normalized);
-    return !!row;
+    if (row) return true;
+    // fallback: check INVITE_CODE env var (for codes set after db was seeded)
+    return normalized === process.env.INVITE_CODE?.trim().toUpperCase();
   }
 
   markUsed(code: string) {

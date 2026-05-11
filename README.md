@@ -89,6 +89,7 @@ cp .env.example .env.local
 | `ANTHROPIC_API_KEY` | 可选 | Anthropic API 密钥（使用 Claude 模型时需要） |
 | `FEISHU_APP_ID` | 可选 | 飞书应用 App ID（解析飞书文档时需要） |
 | `FEISHU_APP_SECRET` | 可选 | 飞书应用 App Secret |
+| `INVITE_CODE` | 可选 | 登录邀请码（不设置则首次启动时自动生成 10 个随机码，见终端日志） |
 
 > **注意**：最小配置只需 `DASHSCOPE_API_KEY` 即可使用 LLM 和知识库功能。音频转写需要额外配置 OSS。
 
