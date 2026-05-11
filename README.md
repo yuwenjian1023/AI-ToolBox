@@ -8,6 +8,9 @@
 
 ---
 
+
+> 点击图片看录屏或者点击[**Demo.mp4**](/public/demo.mp4)跳转到录屏文件
+
 [![演示视频](public/demo-poster.jpg)](https://nos.netease.com/youdata-netease/public-utilUpload-hJtV4EjNY14TgV3zkHT2fj.mp4)
 
 ## 功能特性
