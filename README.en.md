@@ -6,7 +6,7 @@ A web-based toolbox for AI-assisted content processing — audio transcription, 
 
 Built with [Next.js](https://nextjs.org) (App Router), React, Tailwind CSS, and TypeScript.
 
-[![Demo video](public/demo-poster.jpg)](public/demo.mp4)
+<video src="https://nos.netease.com/youdata-netease/public-utilUpload-hJtV4EjNY14TgV3zkHT2fj.mp4" controls width="100%" poster="public/demo-poster.jpg"></video>
 
 ## Features
 
