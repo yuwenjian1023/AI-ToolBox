@@ -8,7 +8,7 @@
 
 ---
 
-<video src="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo.mp4" controls width="100%" poster="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo-poster.jpg"></video>
+[![演示视频](public/demo-poster.jpg)](public/demo.mp4)
 
 ## 功能特性
 

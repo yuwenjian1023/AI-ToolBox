@@ -6,7 +6,7 @@ A web-based toolbox for AI-assisted content processing — audio transcription, 
 
 Built with [Next.js](https://nextjs.org) (App Router), React, Tailwind CSS, and TypeScript.
 
-<video src="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo.mp4" controls width="100%" poster="https://raw.githubusercontent.com/yuwenjian1023/AI-ToolBox/main/public/demo-poster.jpg"></video>
+[![Demo video](public/demo-poster.jpg)](public/demo.mp4)
 
 ## Features
 
