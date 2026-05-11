@@ -10,13 +10,14 @@ Built with [Next.js](https://nextjs.org) (App Router), React, Tailwind CSS, and 
 
 ## Features
 
-- **Audio Transcription** — Transcribe audio files via Aliyun DashScope ASR, with OSS for temporary storage
+- **Audio Transcription** — Transcribe audio files via Aliyun DashScope ASR, with OSS for temporary storage. After transcription, AI automatically generates structured Markdown notes + Mermaid mind maps.
 - **Knowledge Base** — Vector-based document search with chunking, embeddings (DashScope), and SQLite storage
 - **Document Parsing** — Parse PDF, Word (.docx), HTML, Markdown, and Feishu (Lark) documents
 - **LLM Integration** — Supports Anthropic Claude and DashScope (Qwen) for text generation
+- **Content Generation** — Generate structured Markdown summaries, Mermaid mind maps, and XMind files from transcribed audio/video content
+- **Obsidian Sync** — Save generated notes and mind maps to your local Obsidian vault with one click, building a personal knowledge graph over time
 - **Task Pipeline** — Async task processing with real-time progress updates via SSE
-- **Mermaid Rendering** — Render Mermaid diagrams for visualizing document content
-- **Audio Download** — Download audio from URLs via yt-dlp integration
+- **Audio Download** — Download audio from URLs (Bilibili, Xiaoyuzhou, etc.) via yt-dlp integration
 
 ## Getting Started
 
@@ -56,6 +57,7 @@ Edit `.env.local` with your API keys:
 | `LLM_PROVIDER` | `dashscope` or `anthropic` |
 | `ANTHROPIC_API_KEY` | Anthropic API key (if using Claude) |
 | `INVITE_CODE` | Login invite code (optional; if not set, 10 random codes are generated on first start and printed to console) |
+| `OBSIDIAN_VAULT_PATH` | Path to your local Obsidian vault (optional, for one-click note sync) |
 
 ### Development
 
