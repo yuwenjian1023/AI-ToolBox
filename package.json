@@ -1,0 +1,41 @@
+{
+  "name": "ai-toolbox",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "check": "npx tsx scripts/check-deps.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.90.0",
+    "@mermaid-js/mermaid-cli": "^11.12.0",
+    "ali-oss": "^6.23.0",
+    "better-sqlite3": "^12.9.0",
+    "cheerio": "^1.2.0",
+    "csv-parse": "^6.2.1",
+    "jszip": "^3.10.1",
+    "lightningcss": "^1.32.0",
+    "lightningcss-darwin-arm64": "^1.32.0",
+    "mammoth": "^1.12.0",
+    "mermaid": "^11.14.0",
+    "next": "16.2.4",
+    "pdf-parse": "^2.4.5",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
